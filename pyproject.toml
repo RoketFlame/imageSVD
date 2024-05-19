@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "cdisvd"
+version = "0.1.0"
+description = "SVD image compression and decompression tool."
+authors = ["Danil S. <danil.slinchuk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+cdisvd = "cdisvd.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.12.3"}
+numpy = "^1.26.4"
+pillow = "^10.3.0"
+nptyping = "^2.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 99
