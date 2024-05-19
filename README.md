@@ -19,6 +19,16 @@ cdisvd compress --help
 cdisvd decompress --help
 ```
 
+## Available methods
+
+- numpy:
+```python
+numpy.linalg.svd()
+```
+
+- power-iterations: http://www.cs.yale.edu/homes/el327/datamining2013aFiles/07_singular_value_decomposition.pdf
+- block-power-iter: https://www.degruyter.com/document/doi/10.1515/jisys-2018-0034/html
+
 ## Compressed format
 
 The compressed image has the following structure.
